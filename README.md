@@ -1,21 +1,28 @@
-<h1>Next.js Latest (Webpack | TypeScript)</h1>
+# Design System with Storybook, Next.js, and Panda CSS
 
-<p>
-  This is project generated to serve as a reproduction starter for Storybook.
-</p>
+This design system provides a collection of reusable UI components for creating consistent and visually appealing interfaces in Next.js projects. It is configured with Storybook for component development and documentation, and utilizes Panda CSS for styling.
 
-<a  href="https://stackblitz.com/github/storybookjs/sandboxes/tree/next/nextjs/default-ts/after-storybook?preset=node=">
-  View it in Stackblitz
-</a>
+## Features
 
-<h3>Testing instructions</h3>
+- **Reusable Components:** A library of modular UI components for easy integration into Next.js projects.
+- **Storybook Integration:** Explore and develop components in isolation with Storybook.
+- **Next.js Configuration:** Seamless integration with Next.js for efficient component usage in web applications.
+- **Panda CSS Styling:** Modern and lightweight CSS framework for styling components.
 
-<p>Install dependencies:</p>
-<pre>
-  yarn
-</pre>
+## Getting Started
 
-<p>Run Storybook:</p>
-<pre>
-  yarn storybook
-</pre>
+1. **Clone the Repository:**
+   ```bash
+   git clone git@github.com:itslarissayall/my-design-system.git
+
+## Stack
+
+- [Storybook](https://storybook.js.org/)
+- [Next.js](https://nextjs.org/)
+- [React.js](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Panda CSS](https://panda-css.com/)
+
+## License 
+
+The source files in this repository are made available under the terms of the [MIT License](https://opensource.org/licenses/MIT).
