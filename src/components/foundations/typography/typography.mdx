@@ -1,0 +1,94 @@
+import { Meta, Typeset, Preview } from '@storybook/blocks'
+
+<Meta title="Foundations/Typography" />
+
+export const typography = {
+  type: {
+    heading: '"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    body: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif'
+  },
+  weight: {
+    thin: 100,
+    extralight: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900
+  },
+  size: {
+    '2xs': 8,
+    xs: 12,
+    sm: 14,
+    md: 16,
+    lg: 18,
+    xl: 20,
+    '2xl': 24,
+    '3xl': 30,
+    '4xl': 36,
+    '5xl': 48,
+    '6xl': 60,
+    '7xl': 72,
+    '8xl': 96,
+    '9xl': 128
+  }
+}
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+
+# Typography
+
+<br />
+
+
+### **Weights:**
+<br/>
+
+<b>Thin (100)</b>  
+<span style={{ fontWeight: 100 }}>{SampleText}</span>
+
+<b>Extralight (200)</b>  
+<span style={{ fontWeight: 200 }}>{SampleText}</span>
+
+<b>Light (300)</b>  
+<span style={{ fontWeight: 300 }}>{SampleText}</span>
+
+<b>Normal (400)</b>  
+<span style={{ fontWeight: 400 }}>{SampleText}</span>
+
+<b>Medium (500)</b>  
+<span style={{ fontWeight: 500 }}>{SampleText}</span>
+
+<b>Semibold (600)</b>  
+<span style={{ fontWeight: 600 }}>{SampleText}</span>
+
+<b>Bold (700)</b>  
+<span style={{ fontWeight: 700 }}>{SampleText}</span>
+
+<b>Extrabold (800)</b>  
+<span style={{ fontWeight: 800 }}>{SampleText}</span>
+
+<b>Black (900)</b>  
+<span style={{ fontWeight: 900 }}>{SampleText}</span>
+<br/>
+
+### **Sizes:**
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.xs),
+    Number(typography.size.sm),
+    Number(typography.size.md),
+    Number(typography.size.lg),
+    Number(typography.size.xl),
+    Number(typography.size['2xl']),
+    Number(typography.size['3xl']),
+    Number(typography.size['4xl'])
+  ]}
+  fontWeight={typography.weight.normal}
+
+  sampleText={SampleText}
+  fontFamily={typography.type.heading}
+/>

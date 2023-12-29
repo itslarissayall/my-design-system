@@ -1,6 +1,8 @@
+
+import { FontSizeTokens, FontWeightsTokens } from "@/types";
 import type { TextStyles, Tokens } from "@pandacss/types";
 
-export const fontSizes: Tokens["fontSizes"] = {
+export const fontSizes: FontSizeTokens = {
   "2xs": { value: "0.5rem" },
   xs: { value: "0.75rem" },
   sm: { value: "0.875rem" },
@@ -10,14 +12,9 @@ export const fontSizes: Tokens["fontSizes"] = {
   "2xl": { value: "1.5rem" },
   "3xl": { value: "1.875rem" },
   "4xl": { value: "2.25rem" },
-  "5xl": { value: "3rem" },
-  "6xl": { value: "3.75rem" },
-  "7xl": { value: "4.5rem" },
-  "8xl": { value: "6rem" },
-  "9xl": { value: "8rem" },
 };
 
-export const fontWeights: Tokens["fontWeights"] = {
+export const fontWeights: FontWeightsTokens = {
   thin: { value: "100" },
   extralight: { value: "200" },
   light: { value: "300" },
@@ -48,8 +45,8 @@ export const lineHeights: Tokens["lineHeights"] = {
 };
 
 export const fonts: Tokens["fonts"] = {
-  heading: { value: "Montserrat, sans-serif" },
-  body: { value: "Nunito sans, sans-serif" },
+  heading: { value:'"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif' },
+  body: { value: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif' },
 };
 
 export const textStyles: TextStyles = {

@@ -1,6 +1,5 @@
 import { styled } from "@/styled-system/jsx";
 
-
 export const StyledButton = styled("button", {
  base: {
     cursor: "pointer",
