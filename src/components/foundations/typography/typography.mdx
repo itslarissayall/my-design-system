@@ -42,35 +42,48 @@ export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing el
 
 <br />
 
+### **Fonts:**
+<br />
+
+<b style={{ fontFamily: typography.type.heading }}>Heading: '"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif' </b>
+<br />
+
+<span style={{ fontFamily: typography.type.heading }}>{SampleText}</span>
+<br/>
+<br />
+<b style={{ fontFamily: typography.type.body }}>Body: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif' </b>
+<br />
+<span style={{ fontFamily: typography.type.body }}>{SampleText}</span>
+
 
 ### **Weights:**
 <br/>
 
-<b>Thin (100)</b>  
+<b>Thin (fontWeight: 100)</b>  
 <span style={{ fontWeight: 100 }}>{SampleText}</span>
 
-<b>Extralight (200)</b>  
+<b>Extralight (fontWeight: 200)</b>  
 <span style={{ fontWeight: 200 }}>{SampleText}</span>
 
-<b>Light (300)</b>  
+<b>Light (fontWeight: 300)</b>  
 <span style={{ fontWeight: 300 }}>{SampleText}</span>
 
-<b>Normal (400)</b>  
+<b>Normal (fontWeight: 400)</b>  
 <span style={{ fontWeight: 400 }}>{SampleText}</span>
 
-<b>Medium (500)</b>  
+<b>Medium (fontWeight: 500)</b>  
 <span style={{ fontWeight: 500 }}>{SampleText}</span>
 
-<b>Semibold (600)</b>  
+<b>Semibold (fontWeight: 600)</b>  
 <span style={{ fontWeight: 600 }}>{SampleText}</span>
 
-<b>Bold (700)</b>  
+<b>Bold (fontWeight: 700)</b>  
 <span style={{ fontWeight: 700 }}>{SampleText}</span>
 
-<b>Extrabold (800)</b>  
+<b>Extrabold (fontWeight: 800)</b>  
 <span style={{ fontWeight: 800 }}>{SampleText}</span>
 
-<b>Black (900)</b>  
+<b>Black (fontWeight: 900)</b>  
 <span style={{ fontWeight: 900 }}>{SampleText}</span>
 <br/>
 
@@ -92,3 +105,46 @@ export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing el
   sampleText={SampleText}
   fontFamily={typography.type.heading}
 />
+
+
+### **LineHeights:**
+<br/>
+
+
+
+<b>Tight (lineHeight: 1)</b>  
+<span style={{ lineHeight: 1 }}>{SampleText}</span>
+
+<b>Snug (lineHeight: 1.25)</b>  
+<span style={{ lineHeight: 1.25 }}>{SampleText}</span>
+
+<b>Normal (lineHeight: 1.5)</b>  
+<span style={{ lineHeight: 1.5 }}>{SampleText}</span>
+
+<b>Relaxed (lineHeight: 1.5)</b>  
+<span style={{ lineHeight: 1.625 }}>{SampleText}</span>
+
+<b>Loose (lineHeight: 1.5)</b>  
+<span style={{ lineHeight: 1.2 }}>{SampleText}</span>
+
+<br />
+### **LetterSpacing:**
+<br/>
+
+<b>Tighter (letterSpacing: "-0.05em")</b>  
+<span style={{ letterSpacing: "-0.05em" }}>{SampleText}</span>
+
+<b>Tight (letterSpacing: "-0.025em")</b>  
+<span style={{ letterSpacing: "-0.025em" }}>{SampleText}</span>
+
+<b>Normal (letterSpacing: "0em")</b>  
+<span style={{ letterSpacing: "0em"}}>{SampleText}</span>
+
+<b>Wide (letterSpacing:"0.025em")</b>  
+<span style={{ letterSpacing: "0.025em" }}>{SampleText}</span>
+
+<b>Wider (letterSpacing: "0.05em")</b>  
+<span style={{ letterSpacing: "0.05em" }}>{SampleText}</span>
+
+<b>Widest (letterSpacing: "0.1em")</b> 
+<span style={{ letterSpacing: "0.1em" }}>{SampleText}</span>
