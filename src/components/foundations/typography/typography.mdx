@@ -1,0 +1,150 @@
+import { Meta, Typeset, Preview } from '@storybook/blocks'
+
+<Meta title="Foundations/Typography" />
+
+export const typography = {
+  type: {
+    heading: '"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    body: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif'
+  },
+  weight: {
+    thin: 100,
+    extralight: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900
+  },
+  size: {
+    '2xs': 8,
+    xs: 12,
+    sm: 14,
+    md: 16,
+    lg: 18,
+    xl: 20,
+    '2xl': 24,
+    '3xl': 30,
+    '4xl': 36,
+    '5xl': 48,
+    '6xl': 60,
+    '7xl': 72,
+    '8xl': 96,
+    '9xl': 128
+  }
+}
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+
+# Typography
+
+<br />
+
+### **Fonts:**
+<br />
+
+<b style={{ fontFamily: typography.type.heading }}>Heading: '"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif' </b>
+<br />
+
+<span style={{ fontFamily: typography.type.heading }}>{SampleText}</span>
+<br/>
+<br />
+<b style={{ fontFamily: typography.type.body }}>Body: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif' </b>
+<br />
+<span style={{ fontFamily: typography.type.body }}>{SampleText}</span>
+
+
+### **Weights:**
+<br/>
+
+<b>Thin (fontWeight: 100)</b>  
+<span style={{ fontWeight: 100 }}>{SampleText}</span>
+
+<b>Extralight (fontWeight: 200)</b>  
+<span style={{ fontWeight: 200 }}>{SampleText}</span>
+
+<b>Light (fontWeight: 300)</b>  
+<span style={{ fontWeight: 300 }}>{SampleText}</span>
+
+<b>Normal (fontWeight: 400)</b>  
+<span style={{ fontWeight: 400 }}>{SampleText}</span>
+
+<b>Medium (fontWeight: 500)</b>  
+<span style={{ fontWeight: 500 }}>{SampleText}</span>
+
+<b>Semibold (fontWeight: 600)</b>  
+<span style={{ fontWeight: 600 }}>{SampleText}</span>
+
+<b>Bold (fontWeight: 700)</b>  
+<span style={{ fontWeight: 700 }}>{SampleText}</span>
+
+<b>Extrabold (fontWeight: 800)</b>  
+<span style={{ fontWeight: 800 }}>{SampleText}</span>
+
+<b>Black (fontWeight: 900)</b>  
+<span style={{ fontWeight: 900 }}>{SampleText}</span>
+<br/>
+
+### **Sizes:**
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.xs),
+    Number(typography.size.sm),
+    Number(typography.size.md),
+    Number(typography.size.lg),
+    Number(typography.size.xl),
+    Number(typography.size['2xl']),
+    Number(typography.size['3xl']),
+    Number(typography.size['4xl'])
+  ]}
+  fontWeight={typography.weight.normal}
+
+  sampleText={SampleText}
+  fontFamily={typography.type.heading}
+/>
+
+
+### **LineHeights:**
+<br/>
+
+
+
+<b>Tight (lineHeight: 1)</b>  
+<span style={{ lineHeight: 1 }}>{SampleText}</span>
+
+<b>Snug (lineHeight: 1.25)</b>  
+<span style={{ lineHeight: 1.25 }}>{SampleText}</span>
+
+<b>Normal (lineHeight: 1.5)</b>  
+<span style={{ lineHeight: 1.5 }}>{SampleText}</span>
+
+<b>Relaxed (lineHeight: 1.5)</b>  
+<span style={{ lineHeight: 1.625 }}>{SampleText}</span>
+
+<b>Loose (lineHeight: 1.5)</b>  
+<span style={{ lineHeight: 1.2 }}>{SampleText}</span>
+
+<br />
+### **LetterSpacing:**
+<br/>
+
+<b>Tighter (letterSpacing: "-0.05em")</b>  
+<span style={{ letterSpacing: "-0.05em" }}>{SampleText}</span>
+
+<b>Tight (letterSpacing: "-0.025em")</b>  
+<span style={{ letterSpacing: "-0.025em" }}>{SampleText}</span>
+
+<b>Normal (letterSpacing: "0em")</b>  
+<span style={{ letterSpacing: "0em"}}>{SampleText}</span>
+
+<b>Wide (letterSpacing:"0.025em")</b>  
+<span style={{ letterSpacing: "0.025em" }}>{SampleText}</span>
+
+<b>Wider (letterSpacing: "0.05em")</b>  
+<span style={{ letterSpacing: "0.05em" }}>{SampleText}</span>
+
+<b>Widest (letterSpacing: "0.1em")</b> 
+<span style={{ letterSpacing: "0.1em" }}>{SampleText}</span>

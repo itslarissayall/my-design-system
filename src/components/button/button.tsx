@@ -1,6 +1,6 @@
 import { StyledButton } from "./button.style";
-import { IButtonProps } from "./button.types";
+import { IButton } from "./types";
 
-export const Button = ({ children, colorMode, size, type }: IButtonProps) => {
+export const Button = ({ children, colorMode, size, type }: IButton) => {
   return <StyledButton type={type} size={size} data-color-mode={colorMode}>{children}</StyledButton>;
 };
